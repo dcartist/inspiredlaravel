@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Auth\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,7 @@ Route::get('/mantra', function(){return view('directory');})->name('mantra');
 Route::get('/contact', function(){return view('directory');})->name('contact');
 Route::get('/blog', function(){return view('directory');})->name('blog');
 Route::get('/supoort', function(){return view('directory');})->name('supportgroups');
+
+
+//Auth
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
