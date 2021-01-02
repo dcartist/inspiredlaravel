@@ -16,10 +16,8 @@
     </style>
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-<!-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> -->
-<link rel="stylesheet" href="{{asset('css/custom.css')}}">
-<link rel="stylesheet" href="{{asset('css/tw.css')}}">
-    <!-- <link href = {{ asset('css/tw.css') }} rel = "stylesheet" /> -->
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
+
         <title>Inspired Tech Life</title>
 </head>
 <body>
