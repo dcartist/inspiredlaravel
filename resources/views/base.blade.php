@@ -15,6 +15,7 @@
             }
     </style>
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
+<!-- <link rel="stylesheet" href="{{secure_asset('css/style.css')}}"> -->
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('css/app.css')}}">
 

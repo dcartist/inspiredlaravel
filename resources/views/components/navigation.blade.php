@@ -19,11 +19,11 @@
     <ul class="flex items-center">
     <li class="p-3"><a href="{{ route('home')}}"><span class="text-xl font-bold">INSPIRED TECH LIFE</span></a></li>
     <li><a href="{{ route('about')}}" class="p-3">About</a></li>
-    <li><a href="" class="p-3">Support Groups</a></li>
-    <li><a href="" class="p-3">Tech Mantras</a></li>
+    <li><a href="{{ route('supportgroups')}}" class="p-3">Support Groups</a></li>
+    <li><a href="{{ route('mantra')}}" class="p-3">Mantras</a></li>
     <li><a href="{{ route('directory')}}" class="p-3">Directory</a></li>
-    <li><a href="" class="p-3">Blog</a></li>
-    <li><a href="" class="p-3">Contact</a></li>
+    <li><a href="{{ route('blog')}}" class="p-3">Blog</a></li>
+    <li><a href="{{ route('contact')}}" class="p-3">Contact</a></li>
     <!-- @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
