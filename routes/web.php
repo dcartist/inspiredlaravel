@@ -28,5 +28,6 @@ Route::get('/supoort', function(){return view('directory');})->name('supportgrou
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'store']);
 Route::get('/user/home', [UserProfileController::class, 'index'])->name('user.index');
 Route::post ('/logout', [LogoutController::class, 'store'])->name('logout');
