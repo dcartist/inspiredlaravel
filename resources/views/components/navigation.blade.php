@@ -24,7 +24,7 @@
     <li><a href="{{ route('directory')}}" class="p-3">Directory</a></li>
     <li><a href="{{ route('blog')}}" class="p-3">Blog</a></li>
     <li><a href="{{ route('contact')}}" class="p-3">Contact</a></li>
-    <!-- @if (Route::has('login'))
+   @if (Route::has('register'))
                 <div class="top-right links">
                     @auth
 
@@ -40,6 +40,6 @@
                         @endif
                     @endauth
                 </div>
-            @endif -->
+            @endif
     </ul>
 </nav>

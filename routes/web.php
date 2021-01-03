@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\UserProfileController;
+use App\Http\Controllers\Auth\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,8 +24,9 @@ Route::get('/contact', function(){return view('directory');})->name('contact');
 Route::get('/blog', function(){return view('directory');})->name('blog');
 Route::get('/supoort', function(){return view('directory');})->name('supportgroups');
 
-
 //Auth
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/user/home', [UserProfileController::class, 'index'])->name('user.index');
+Route::post ('/logout', [LogoutController::class, 'store'])->name('logout');
