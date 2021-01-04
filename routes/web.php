@@ -30,8 +30,8 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
-Route::get('/user/home', [UserProfileController::class, 'index'])->name('user.index');
+Route::get('/user', [UserProfileController::class, 'index'])->name('userIndex')->middleware('auth');
 Route::post ('/logout', [LogoutController::class, 'store'])->name('logout');
-Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+Route::get('/admin', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
 
 

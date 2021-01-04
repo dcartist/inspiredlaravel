@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-
+use Illuminate\Http\Request;
 class isAdmin
 {
     /**
@@ -13,8 +13,17 @@ class isAdmin
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    // public function handle($request, Closure $next)
+    // {
+    //     return $next($request);
+    // }
+
+    public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if(auth()->user()->is_admin == 1){
+            return $next($request);
+        }
+
+        return redirect()->route('userIndex');
     }
 }
