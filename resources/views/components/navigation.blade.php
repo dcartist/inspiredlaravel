@@ -46,7 +46,7 @@
  -->
 
 
- <nav class="navbar navbar-expand-xl navbar-light bg-light">
+ <nav class="navbar navbar-expand-xl navbar-light bg-light shadow-xl">
  <a href="{{ route('home')}}"><span class="text-xl font-bold navbar-brand">INSPIRED TECH LIFE</span></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,13 +70,13 @@
 
                         <form action="{{route('logout')}}" method="post" >
 @csrf
-<button type="submit"> Logout</button>
+<button type="submit" class="font-semibold"> Logout</button>
 </form>
                     @else
-                        <a href="{{ route('login') }}" class="nav-link">Login</a>
+                        <a href="{{ route('login') }}" class="nav-link font-semibold">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="nav-link">Register</a>
+                            <a href="{{ route('register') }}" class="nav-link font-semibold">Register</a>
                         @endif
                     @endauth
             @endif
