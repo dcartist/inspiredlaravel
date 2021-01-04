@@ -8,6 +8,18 @@
 <section class="p-15">
 
     <p>This is the about section</p>
+    @if ($blogs->count())
+            @foreach($blogs as $blog)
+            {{$blog->title}}
+            {{$blog->body}}
+
+            @endforeach
+
+            {{$blogs->links()}}
+            @else
+            <p>Theree's no blogs listed</p>
+            @endif
+
 </section>
 
 @endsection

@@ -2,4 +2,8 @@
 
 @section('content')
 admin section
+
+@guest
+trial
+@endguest
 @endsection

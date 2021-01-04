@@ -4,13 +4,13 @@
 
 
             <div class="content">
-                <div class="title m-b-md">
-                Inspired Tech Life
+                <div class="title m-b-md text-gray-500 font-extralight">
+                Don't suffer in silence!
                 </div>
-                <div>
-                A source of inspiration
+                <div class="-mt-10">
+                A source of inspiration for designers, developers, data scientist and beyond!
                 </div>
 
             </div>
         </div>
-     @endsection
+@endsection
