@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
        .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -14,8 +14,8 @@
                 top: 18px;
             }
 </style>
+
 <nav class="flex justify-between mb-3" >
-    <!-- An unexamined life is not worth living. - Socrates -->
     <ul class="flex items-center">
     <li class="p-3"><a href="{{ route('home')}}"><span class="text-xl font-bold">INSPIRED TECH LIFE</span></a></li>
     <li><a href="{{ route('about')}}" class="p-3">About</a></li>
@@ -42,4 +42,44 @@
                 </div>
             @endif
     </ul>
+</nav>
+ -->
+
+
+ <nav class="navbar navbar-expand-xl navbar-light bg-light">
+ <a href="{{ route('home')}}"><span class="text-xl font-bold navbar-brand">INSPIRED TECH LIFE</span></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+    <li class="nav-item"><a href="{{ route('about')}}" class="dropdown-item p-3">About</a></li>
+    <li class="nav-item"><a href="{{ route('supportgroups')}}" class="dropdown-item p-3">Support Groups</a></li>
+    <li class="nav-item"><a href="{{ route('mantra')}}" class="dropdown-item p-3">Mantras</a></li>
+    <li class="nav-item"><a href="{{ route('directory')}}" class="dropdown-item p-3">Directory</a></li>
+    <li class="nav-item"><a href="{{ route('blog')}}" class="dropdown-item p-3">Blog</a></li>
+    <li class="nav-item"><a href="{{ route('contact')}}" class="dropdown-item p-3">Contact</a></li>
+
+    </ul>
+
+    @if (Route::has('register'))
+                    @auth
+
+                        <form action="{{route('logout')}}" method="post" >
+@csrf
+<button type="submit"> Logout</button>
+</form>
+                    @else
+                        <a href="{{ route('login') }}" class="nav-link">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="nav-link">Register</a>
+                        @endif
+                    @endauth
+            @endif
+
+  </div>
 </nav>

@@ -7,7 +7,7 @@
 </div>
 <section class="p-15">
 
-    <p>This is the about section</p>
+    <p>Who</p>
 </section>
 
 @endsection
