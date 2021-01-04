@@ -56,12 +56,12 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
-    <li class="nav-item"><a href="{{ route('about')}}" class="dropdown-item p-3">About</a></li>
-    <li class="nav-item"><a href="{{ route('supportgroups')}}" class="dropdown-item p-3">Support Groups</a></li>
-    <li class="nav-item"><a href="{{ route('mantra')}}" class="dropdown-item p-3">Mantras</a></li>
-    <li class="nav-item"><a href="{{ route('directory')}}" class="dropdown-item p-3">Directory</a></li>
-    <li class="nav-item"><a href="{{ route('blog')}}" class="dropdown-item p-3">Blog</a></li>
-    <li class="nav-item"><a href="{{ route('contact')}}" class="dropdown-item p-3">Contact</a></li>
+    <li class="nav-item"><a href="{{ route('about')}}" class="nav-link p-3 ">About</a></li>
+    <li class="nav-item"><a href="{{ route('supportgroups')}}" class="nav-link p-3 ">Support Groups</a></li>
+    <li class="nav-item"><a href="{{ route('mantra')}}" class="nav-link p-3 ">Mantras</a></li>
+    <li class="nav-item"><a href="{{ route('directory')}}" class="nav-link p-3 ">Directory</a></li>
+    <li class="nav-item"><a href="{{ route('blog')}}" class="nav-link p-3 ">Blog</a></li>
+    <li class="nav-item"><a href="{{ route('contact')}}" class="nav-link p-3 ">Contact</a></li>
 
     </ul>
 
@@ -73,10 +73,10 @@
 <button type="submit" class="font-semibold"> Logout</button>
 </form>
                     @else
-                        <a href="{{ route('login') }}" class="nav-link font-semibold">Login</a>
+                        <a href="{{ route('login') }}" class="nav-link  border-2 border-black text-white bg-black" id="loginNav">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="nav-link font-semibold">Register</a>
+                            <a href="{{ route('register') }}" class="border-black nav-link  border-2">Register</a>
                         @endif
                     @endauth
             @endif

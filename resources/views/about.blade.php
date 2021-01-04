@@ -5,9 +5,14 @@
 
 <h1 class="bg-black min-w-full self-end h-11 text-3xl pl-5 text-white">About Inspired Tech Life</h1>
 </div>
-<section class="p-15">
+<h1 class="text-8xl text-center font-extralight pt-4">
+    Don't suffer in silence!
+</h1>
+<section class="p-10 ml-5 mr-5">
 
-    <p>Who</p>
+Create by Paula Bannerman (www.dcartist.studio) as a  prototype for a community for developers, designers, data scientists, and beyond. This is meant to be able to help those in the tech world to find help and support via groups, mantras, and being able to find support sources.
+
+
 </section>
 
 @endsection
