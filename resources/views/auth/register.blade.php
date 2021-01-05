@@ -13,13 +13,13 @@
             @error('username')
             <div class="text-sm text-red-600">{{$message}}</div>
             @enderror
-            <input type="text" name="username" id="username" placeholder="UserName" onkeyup="forceLower(this)" class="p-2 w-full border-2 mb-4 @error('username') border-2 border-red-500 @enderror"
+            <input type="text" name="username" id="username" placeholder="UserName" onkeyup="changeToLowerCase(this)" class="p-2 w-full border-2 mb-4 @error('username') border-2 border-red-500 @enderror"
                 value="{{old('username')}}">
             <label>Email</label>
             @error('email')
             <div class="text-sm text-red-600">{{$message}}</div>
             @enderror
-            <input type="text" name="email" onkeyup="forceLower(this)"  id="email" placeholder="Email" class="p-2 w-full border-2 mb-4 @error('email') border-2 border-red-500 @enderror"
+            <input type="text" name="email" onkeyup="changeToLowerCase(this)"  id="email" placeholder="Email" class="p-2 w-full border-2 mb-4 @error('email') border-2 border-red-500 @enderror"
                 value="{{old('email')}}">
 
             <label>Password</label>

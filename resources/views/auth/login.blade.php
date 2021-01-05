@@ -11,7 +11,7 @@
             @error('email')
             <div class="text-sm text-red-600">{{$message}}</div>
             @enderror
-            <input type="text" name="email" onkeyup="forceLower(this)"  id="email" placeholder="Email" class="p-2 w-full border-2 mb-4 @error('email') border-2 border-red-500 @enderror"
+            <input type="text" name="email" onkeyup="changeToLowerCase(this)"  id="email" placeholder="Email" class="p-2 w-full border-2 mb-4 @error('email') border-2 border-red-500 @enderror"
                 value="{{old('email')}}">
 
             <label>Password</label>

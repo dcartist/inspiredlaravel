@@ -1,5 +1,4 @@
-function forceLower(strInput)
+function changeToLowerCase(strInput)
 {
 strInput.value=strInput.value.toLowerCase();
-console.log("test")
 }
