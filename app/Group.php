@@ -2,18 +2,22 @@
 
 namespace App;
 
-// use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Blog extends Model
+class Group extends Model
 {
-    // use HasFactory;
+    //
+
     protected $fillable = [
-        'body', 'imageurl', 'title',
+        'name', 'description', 'type',
     ];
 
     //add a user to the blog
     public function user(){
         return $this->belongsTo(User::class);
+    }
+
+    public function usergroup(){
+        return $this->hasMany(Usergroup::class);
     }
 }

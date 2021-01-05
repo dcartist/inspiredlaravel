@@ -8,7 +8,6 @@ class BlogController extends Controller
 {
     public function index()
  {
-
      return view('admin.blog');
  }
 
@@ -17,17 +16,8 @@ class BlogController extends Controller
      $this->validate($request, [
          'body'=> 'required'
      ]);
-
-    //  Post::create([
-    //      'user_id'=> auth()->id(),
-    //      'body' => $request->body
-    //  ])
-    // $request->user()->posts()->create([
-    //     'body'=>$requst->body
-    // ]);
-
+    //adds user to blog and then creates in database
     $request->user()->blog()->create($request->only('body', 'title', 'imageurl'));
-
     return back();
  }
 
