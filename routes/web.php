@@ -7,7 +7,6 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\GroupController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +27,7 @@ Route::get('/contact', function(){return view('directory');})->name('contact');
 // Route::get('/blog', function(){return view('directory');})->name('blog');
 Route::get('/blog', [BlogController::class, 'blogPage'])->name('blog');
 // Route::get('/blog', function(){return view('directory');})->name('blog');
+Route::get('/supoort', function(){return view('directory');})->name('supportgroups');
 
 //Auth
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
@@ -43,10 +43,6 @@ Route::post ('/admin/blog', [BlogController::class, 'store']);
 
 //user
 Route::get('/user', [UserProfileController::class, 'index'])->name('userIndex')->middleware('auth');
-
-//Support Group
-// Route::get('/supoort', function(){return view('directory');})->name('supportgroups');
-Route::get('/supoort', [GroupController::class, 'index'])->name('supportgroups');
 
 
 

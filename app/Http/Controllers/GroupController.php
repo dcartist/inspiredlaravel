@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Group;
+
 use Illuminate\Http\Request;
 
 class GroupController extends Controller
@@ -9,22 +9,25 @@ class GroupController extends Controller
 
     public function index()
     {
-        $groups = Group::paginate(15);
-       return view('supportgroups', [
-           'groups' => $groups
-       ]);
+        return view('admin.blog');
     }
 
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name'=> 'required',
-            'type'=>'required'
+            'body'=> 'required'
         ]);
        //adds user to blog and then creates in database
-       $request->user()->usergroup()->create($request->only('name', 'type', 'description'));
+       $request->user()->blog()->create($request->only('body', 'title', 'imageurl'));
        return back();
     }
 
+    public function blogPage(){
+       $blogs = Blog::latest()->paginate(5);
+
+       return view('blog', [
+           'blogs' => $blogs
+       ]);
+    }
 
 }
