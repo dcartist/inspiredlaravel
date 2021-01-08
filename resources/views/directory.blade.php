@@ -7,19 +7,25 @@
 
 
 </div>
-<div>
 @if ($directories->count())
+<div class="grid grid-cols-4 gap-2">
             @foreach($directories as $directory)
+            <div class="m-3">
+            <h1 class="text-2xl">
             {{$directory->name}}
-            {{$directory->description}}
-            {{$directory->url}}
+            </h1>
+            <p class="text-sm"> {{$directory->description}}
+            </p>
+            <a href="{{$directory->url}}" target="blank">
+            <button class="bg-black text-white p-2 text-sm mt-3">Go to website</button>
+            </a>
+            </div>
 
             @endforeach
-
-            {{$directories->links()}}
             @else
-            <p>Theree's no blogs listed</p>
+            <p>Theree's no directory listing</p>
             @endif
 </div>
 
+{{$directories->links()}}
 @endsection

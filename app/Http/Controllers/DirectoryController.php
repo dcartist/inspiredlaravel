@@ -8,7 +8,7 @@ class DirectoryController extends Controller
 {
     //
  public function index(){
-    $directories = Directory::latest()->paginate(5);
+    $directories = Directory::latest()->paginate(10);
 
     return view('directory', [
         'directories' => $directories

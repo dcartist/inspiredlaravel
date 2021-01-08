@@ -23,7 +23,7 @@ use App\Http\Controllers\GroupController;
 //Main
 Route::get('/', function () {return view('welcome');})->name('home');
 Route::get('/about', function (){return view('about');})->name('about');
-Route::get('/mantra', function(){return view('directory');})->name('mantra');
+Route::get('/mantra', function(){return view('techmantra');})->name('mantra');
 Route::get('/contact', function(){return view('directory');})->name('contact');
 Route::get('/blog', [BlogController::class, 'blogPage'])->name('blog');
 

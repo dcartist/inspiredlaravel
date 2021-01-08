@@ -20,6 +20,60 @@ class CreateDirectorySeeder extends Seeder
                 'description' => 'Meet new people and get inspired by lectures!',
                 'url' => 'https://creativemornings.com/',
             ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
+            [
+                'name' => 'Creative Morning',
+                'type' => 'Meetup',
+                'description' => 'Meet new people and get inspired by lectures!',
+                'url' => 'https://creativemornings.com/',
+            ],
         ];
 
         foreach ($directory as $key => $value) {
