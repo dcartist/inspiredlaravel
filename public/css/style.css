@@ -68,3 +68,21 @@ li.nav-item>a.nav-link {
 .m-b-md {
     margin-bottom: 30px;
 }
+
+/* page-item disabled
+.page-link
+.page-item */
+
+.page-item a{
+    color:black !important;
+}
+
+.page-link a{
+    color:black !important;
+
+}
+
+.page-item.active .page-link{
+color:white;
+background-color:black !important;    
+}
