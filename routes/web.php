@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\DirectoryController;
 use App\Http\Controllers\GroupController;
 /*
 |--------------------------------------------------------------------------
@@ -22,12 +23,9 @@ use App\Http\Controllers\GroupController;
 //Main
 Route::get('/', function () {return view('welcome');})->name('home');
 Route::get('/about', function (){return view('about');})->name('about');
-Route::get('/directory', function(){return view('directory');})->name('directory');
 Route::get('/mantra', function(){return view('directory');})->name('mantra');
 Route::get('/contact', function(){return view('directory');})->name('contact');
-// Route::get('/blog', function(){return view('directory');})->name('blog');
 Route::get('/blog', [BlogController::class, 'blogPage'])->name('blog');
-// Route::get('/blog', function(){return view('directory');})->name('blog');
 
 //Auth
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
@@ -47,6 +45,10 @@ Route::get('/user', [UserProfileController::class, 'index'])->name('userIndex')-
 //Support Group
 // Route::get('/supoort', function(){return view('directory');})->name('supportgroups');
 Route::get('/supoort', [GroupController::class, 'index'])->name('supportgroups');
+
+//Directory
+Route::get('/directory', [DirectoryController::class, 'index'])->name('directory');
+// Route::get('/directory', function(){return view('directory');})->name('directory');
 
 
 
