@@ -67,8 +67,8 @@
 
     @if (Route::has('register'))
                     @auth
-
-                        <form action="{{route('logout')}}" method="post" >
+                    <a href="{{ route('profile')}}"><span class="mr-2 font-light">{{auth()->user()->username}}</span></a>
+                    <form action="{{route('logout')}}" method="post" >
 @csrf
 <button type="submit" class="font-semibold"> Logout</button>
 </form>

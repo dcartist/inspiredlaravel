@@ -42,6 +42,8 @@ Route::post ('/admin/blog', [BlogController::class, 'store']);
 //user
 Route::get('/user/profile/setup', [UserProfileController::class, 'profileSetup'])->name('userProfileSetup');
 Route::post('/user/profile/setup', [UserProfileController::class, 'store']);
+Route::get('/profile', [UserProfileController::class, 'profile'])->name('profile');
+// Route::get('/user/profile', [UserProfileController::class, 'profile'])->name('profile');
 // Route::get('/user/profile', [UserProfileController::class, 'index'])->name('userIndex')->middleware('auth');
 // Route::get('/user/profile/setup', [UserProfileController::class, 'setup'])->name('userProfileSetup')->middleware('auth');
 

@@ -37,10 +37,7 @@
         </p>
         <input type="text" name="skills" placeholder="add skills" class="border-2">
     </div>
-    <div>
-        <p>Do you want to be a mentor?</p>
-        <input type="checkbox" name="mentor" value="true" checked>
-    </div>
+
 
     <button type="submit"> Submit your form</button>
 

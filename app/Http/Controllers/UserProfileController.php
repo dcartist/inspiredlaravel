@@ -37,10 +37,12 @@ class UserProfileController extends Controller
     }
 
 
-    public function profile(User $user){
-        // dd($user);
-        return view('users.profile', [
-            'user' => $user
+    public function profile(){
+        $profiles = Userprofile::get();
+        // dd($profiles);
+        return view('user.profile', [
+            // 'user' => $user
+            'profiles' => $profiles
         ]);
 }
 
@@ -51,7 +53,8 @@ class UserProfileController extends Controller
         // ]);
        //adds profile to the user
        $request->user()->profile()->create($request->only('color', 'bio', 'skills', 'url', 'avatar'));
-       return back();
+    //    return back();
+            // dd()
     // dd($request);
     }
 }
