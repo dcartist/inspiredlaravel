@@ -57,8 +57,8 @@
     <ul class="navbar-nav mr-auto">
 
     <li class="nav-item"><a href="{{ route('about')}}" class="nav-link p-3 ">About</a></li>
+    <li class="nav-item"><a href="{{ route('inspire')}}" class="nav-link p-3 ">Inspire!</a></li>
     <li class="nav-item"><a href="{{ route('supportgroups')}}" class="nav-link p-3 ">Support Groups</a></li>
-    <li class="nav-item"><a href="{{ route('mantra')}}" class="nav-link p-3 ">Mantras</a></li>
     <li class="nav-item"><a href="{{ route('directory')}}" class="nav-link p-3 ">Directory</a></li>
     <li class="nav-item"><a href="{{ route('blog')}}" class="nav-link p-3 ">Blog</a></li>
     <li class="nav-item"><a href="{{ route('contact')}}" class="nav-link p-3 ">Contact</a></li>
@@ -67,8 +67,8 @@
 
     @if (Route::has('register'))
                     @auth
-
-                        <form action="{{route('logout')}}" method="post" >
+                    <a href="{{ route('profile')}}" class="nav-link"><span class="mr-2 font-light">{{auth()->user()->username}}</span></a>
+                    <form action="{{route('logout')}}" method="post" >
 @csrf
 <button type="submit" class="font-semibold"> Logout</button>
 </form>

@@ -7,6 +7,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\DirectoryController;
+use App\Http\Controllers\GroupController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,13 +23,11 @@ use App\Http\Controllers\BlogController;
 //Main
 Route::get('/', function () {return view('welcome');})->name('home');
 Route::get('/about', function (){return view('about');})->name('about');
-Route::get('/directory', function(){return view('directory');})->name('directory');
-Route::get('/mantra', function(){return view('directory');})->name('mantra');
-Route::get('/contact', function(){return view('directory');})->name('contact');
-// Route::get('/blog', function(){return view('directory');})->name('blog');
+Route::get('/inspire', function(){return view('techmantra');})->name('inspire');
+Route::get('/imposter', function(){return view('imposter');})->name('imposter');
+Route::get('/mantra', function(){return view('imposter');})->name('mantra');
+Route::get('/contact', function(){return view('contact');})->name('contact');
 Route::get('/blog', [BlogController::class, 'blogPage'])->name('blog');
-// Route::get('/blog', function(){return view('directory');})->name('blog');
-Route::get('/supoort', function(){return view('directory');})->name('supportgroups');
 
 //Auth
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
@@ -42,7 +42,15 @@ Route::get('/admin/blog', [BlogController::class, 'index'])->name('admin.blog')-
 Route::post ('/admin/blog', [BlogController::class, 'store']);
 
 //user
-Route::get('/user', [UserProfileController::class, 'index'])->name('userIndex')->middleware('auth');
+Route::get('/user/profile/setup', [UserProfileController::class, 'profileSetup'])->name('userProfileSetup')->middleware('auth');
+Route::post('/user/profile/setup', [UserProfileController::class, 'store']);
+Route::get('/profile', [UserProfileController::class, 'profile'])->name('profile')->middleware('auth');
+
+//Support Group
+Route::get('/supoort', [GroupController::class, 'index'])->name('supportgroups');
+
+//Directory
+Route::get('/directory', [DirectoryController::class, 'index'])->name('directory');
 
 
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserprofilesTable extends Migration
+class CreateDirectoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateUserprofilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('userprofiles', function (Blueprint $table) {
+        Schema::create('directories', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('color');
-            $table->text('bio');
+            $table->text('name');
+            $table->text('description');
+            $table->text('type');
             $table->text('url');
-            $table->text('skills');
-            $table->boolean('mentor');
 
         });
     }
@@ -32,6 +31,6 @@ class CreateUserprofilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('userprofiles');
+        Schema::dropIfExists('directories');
     }
 }
