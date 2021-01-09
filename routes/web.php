@@ -23,7 +23,9 @@ use App\Http\Controllers\GroupController;
 //Main
 Route::get('/', function () {return view('welcome');})->name('home');
 Route::get('/about', function (){return view('about');})->name('about');
-Route::get('/mantra', function(){return view('techmantra');})->name('mantra');
+Route::get('/inspire', function(){return view('techmantra');})->name('inspire');
+Route::get('/imposter', function(){return view('imposter');})->name('imposter');
+Route::get('/mantra', function(){return view('imposter');})->name('mantra');
 Route::get('/contact', function(){return view('contact');})->name('contact');
 Route::get('/blog', [BlogController::class, 'blogPage'])->name('blog');
 
@@ -40,15 +42,11 @@ Route::get('/admin/blog', [BlogController::class, 'index'])->name('admin.blog')-
 Route::post ('/admin/blog', [BlogController::class, 'store']);
 
 //user
-Route::get('/user/profile/setup', [UserProfileController::class, 'profileSetup'])->name('userProfileSetup');
+Route::get('/user/profile/setup', [UserProfileController::class, 'profileSetup'])->name('userProfileSetup')->middleware('auth');
 Route::post('/user/profile/setup', [UserProfileController::class, 'store']);
-Route::get('/profile', [UserProfileController::class, 'profile'])->name('profile');
-// Route::get('/user/profile', [UserProfileController::class, 'profile'])->name('profile');
-// Route::get('/user/profile', [UserProfileController::class, 'index'])->name('userIndex')->middleware('auth');
-// Route::get('/user/profile/setup', [UserProfileController::class, 'setup'])->name('userProfileSetup')->middleware('auth');
+Route::get('/profile', [UserProfileController::class, 'profile'])->name('profile')->middleware('auth');
 
 //Support Group
-// Route::get('/supoort', function(){return view('directory');})->name('supportgroups');
 Route::get('/supoort', [GroupController::class, 'index'])->name('supportgroups');
 
 //Directory
