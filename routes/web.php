@@ -40,7 +40,10 @@ Route::get('/admin/blog', [BlogController::class, 'index'])->name('admin.blog')-
 Route::post ('/admin/blog', [BlogController::class, 'store']);
 
 //user
-Route::get('/user', [UserProfileController::class, 'index'])->name('userIndex')->middleware('auth');
+Route::get('/user/profile/setup', [UserProfileController::class, 'profileSetup'])->name('userProfileSetup');
+Route::post('/user/profile/setup', [UserProfileController::class, 'store']);
+// Route::get('/user/profile', [UserProfileController::class, 'index'])->name('userIndex')->middleware('auth');
+// Route::get('/user/profile/setup', [UserProfileController::class, 'setup'])->name('userProfileSetup')->middleware('auth');
 
 //Support Group
 // Route::get('/supoort', function(){return view('directory');})->name('supportgroups');
@@ -48,7 +51,6 @@ Route::get('/supoort', [GroupController::class, 'index'])->name('supportgroups')
 
 //Directory
 Route::get('/directory', [DirectoryController::class, 'index'])->name('directory');
-// Route::get('/directory', function(){return view('directory');})->name('directory');
 
 
 
