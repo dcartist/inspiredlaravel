@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+// use App\User;
+use App\Userprofile;
 class UserProfileController extends Controller
 {
     //
@@ -21,7 +23,7 @@ class UserProfileController extends Controller
     }
 //Show the application dashboard.
     /**
-     * 
+     *
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
@@ -34,14 +36,22 @@ class UserProfileController extends Controller
         return view('user.setup');
     }
 
+
+    public function profile(User $user){
+        // dd($user);
+        return view('users.profile', [
+            'user' => $user
+        ]);
+}
+
     public function store(Request $request)
     {
         // $this->validate($request, [
         //     'body'=> 'required'
         // ]);
-       //adds user to blog and then creates in database
-    //    $request->user()->blog()->create($request->only('body', 'title', 'imageurl'));
-    //    return back();
-    dd($request);
+       //adds profile to the user
+       $request->user()->profile()->create($request->only('color', 'bio', 'skills', 'url', 'avatar'));
+       return back();
+    // dd($request);
     }
 }
