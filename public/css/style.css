@@ -5,6 +5,20 @@
     background-repeat: no-repeat;
 }
 
+.inspireSection div{
+height: 150px;
+margin: 10px;
+background-color: #3b8eb842;
+display:block;
+width: 180px;
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 5px;
+}
+.inspireSection a, .inspireSection a:hover{
+    text-decoration: none;
+}
 
 html, body {
     background-color: #fff;
@@ -84,5 +98,5 @@ li.nav-item>a.nav-link {
 
 .page-item.active .page-link{
 color:white;
-background-color:black !important;    
+background-color:black !important;
 }
