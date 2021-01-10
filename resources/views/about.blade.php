@@ -12,8 +12,8 @@
 <h1 class="text-8xl text-center font-extralight pt-4 mb-10"> Don't suffer in silence!
 </h1>
 <section class="p-10 ml-5 mr-5 aboutSection">
-<h3 class="text-xl font-bold mb-1">Status:</h3>
-    <p>Prototype</p>
+<h3 class="text-3xl font-bold mb-1">Status: <span class="text-xl font-light">Prototype</span></h3>
+    <p>Due to time limit there are sections that still are under construction.</p>
     <h3 class="text-3xl font-bold mb-1">About</h3>
     <p>Dreamed up during the Digital Ocean hackathon, Inspired Tech life is a community for developers, designers, data scientists, and beyond. ITF's purpose is to help those in the tech world find help and support through groups, videos, mantras, and find support resources.</p>
 

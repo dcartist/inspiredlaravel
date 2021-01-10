@@ -65,6 +65,7 @@
 
     </ul>
 
+
     @if (Route::has('register'))
                     @auth
                     <a href="{{ route('profile')}}" class="nav-link"><span class="mr-2 font-light">{{auth()->user()->username}}</span></a>
@@ -80,6 +81,7 @@
                         @endif
                     @endauth
             @endif
+            <div><x-alert/></div>
 
   </div>
 </nav>

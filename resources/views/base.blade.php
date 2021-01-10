@@ -16,6 +16,8 @@
 <x-navigation/>
 <div>
 @yield('content')
+
+
 </div>
 <script src="https://kit.fontawesome.com/0d31a2da49.js" crossorigin="anonymous"></script>
 <script src="{{ asset('js/script.js')}}"></script>
