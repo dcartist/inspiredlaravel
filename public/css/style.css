@@ -4,6 +4,20 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.frameworks i>p{
+    font-family: 'Helvetica';
+}
+.aboutSection>p{
+    margin-bottom: 15px;
+}
+.aboutMe i>span{
+    font-family: 'Helvetica';
+    font-weight: 400;
+
+}
+.listing li{
+    margin-bottom: 10px;
+}
 
 .inspireSection div{
 height: 150px;
