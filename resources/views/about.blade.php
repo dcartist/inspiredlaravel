@@ -63,8 +63,12 @@ Born and raised in the Washington DC metro area, Paula Bannerman is an artist an
 <h3 class="mb-3 text-sm"><a href="https://www.dcartist.studio" target="_blank" class="text-sm text-blue-700">dcartist.studio</a></h3>
 <i class="fas fa-envelope"> <span>Email</span></i>
 <h3 class="text-sm mb-2 "><a href="mailto:pbannerman13@gmail.com" target="_blank" class="text-sm text-blue-700">Pbannerman13@gmail.com</a></h3>
+<i class="fab fa-github"> <span>Github</span></i>
+<h3 class="mb-2"><a href="https://github.com/dcartist" target="_blank" class="text-sm text-blue-700">github.com/dcartist</a></h3>
 <i class="fab fa-linkedin-in"> <span>LinkedIn</span></i>
-<h3 class="mb-2"><a href="https://www.linkedin.com/in/dcartist/" target="_blank" class="text-sm text-blue-700">linkedin.com/in/dcartist</a></h3>
+<h3 class="mb-2"><a href="https://www.linkedin.com/in/dcartist" target="_blank" class="text-sm text-blue-700">linkedin.com/in/dcartist</a></h3>
+<i class="fab fa-twitter"> <span>Twitter</span></i>
+<h3 class="mb-2"><a href="https://www.twitter.com/dcartist" target="_blank" class="text-sm text-blue-700">twitter.com/dcartist</a></h3>
 <i class="fab fa-instagram"> <span>Instagram</span></i>
 <h3 class="mb-2"><a href="https://www.instagram.com/dcartist" target="_blank" class="text-sm text-blue-700">@dcartist</a></h3>
 
