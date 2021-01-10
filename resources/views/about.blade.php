@@ -31,7 +31,7 @@
 <ul class="listing">
     <li class="list-disc list-inside pl-10">Directory</li>
     <li class="list-disc list-inside pl-10">Inspire section (Imposter Syndrome, Mantras)</li>
-    <li class="list-disc list-inside pl-10">Login/Register</li>
+    <li class="list-disc list-inside pl-10">Login/Register (due to being a prototype only login is available)</li>
     <li class="list-disc list-inside pl-10">Profile Creation</li>
 </ul>
 <h3 class="text-xl font-bold  mb-1">Future Plans:</h3>
