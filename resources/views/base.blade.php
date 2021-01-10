@@ -18,6 +18,7 @@
 @yield('content')
 
 
+<div class="text-center text-sm">&copy; Paula Bannerman 2021</div>
 </div>
 <script src="https://kit.fontawesome.com/0d31a2da49.js" crossorigin="anonymous"></script>
 <script src="{{ asset('js/script.js')}}"></script>
