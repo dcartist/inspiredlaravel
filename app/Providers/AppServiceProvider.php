@@ -24,9 +24,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //moves to https
-        if(config('app.env') === 'production') {
-            \URL::forceScheme('https');
-        }
+        // if(config('app.env') === 'production') {
+        //     \URL::forceScheme('https');
+        // }
     }
     // public function boot()
     // {
