@@ -23,9 +23,9 @@ use App\Http\Controllers\GroupController;
 //Main
 Route::get('/', function () {return view('welcome');})->name('home');
 Route::get('/about', function (){return view('about');})->name('about');
-Route::get('/inspire', function(){return view('techmantra');})->name('inspire');
+Route::get('/inspire', function(){return view('inspire');})->name('inspire');
 Route::get('/imposter', function(){return view('imposter');})->name('imposter');
-Route::get('/mantra', function(){return view('imposter');})->name('mantra');
+Route::get('/mantra', function(){return view('techmantra');})->name('mantra');
 Route::get('/contact', function(){return view('contact');})->name('contact');
 Route::get('/blog', [BlogController::class, 'blogPage'])->name('blog');
 

@@ -61,9 +61,10 @@
     <li class="nav-item"><a href="{{ route('supportgroups')}}" class="nav-link p-3 ">Support Groups</a></li>
     <li class="nav-item"><a href="{{ route('directory')}}" class="nav-link p-3 ">Directory</a></li>
     <li class="nav-item"><a href="{{ route('blog')}}" class="nav-link p-3 ">Blog</a></li>
-    <li class="nav-item"><a href="{{ route('contact')}}" class="nav-link p-3 ">Contact</a></li>
+    <li class="nav-item"><a href="{{ route('contact')}}" class="nav-link p-3">Contact</a></li>
 
     </ul>
+
 
     @if (Route::has('register'))
                     @auth
@@ -80,6 +81,7 @@
                         @endif
                     @endauth
             @endif
+            <div><x-alert/></div>
 
   </div>
 </nav>

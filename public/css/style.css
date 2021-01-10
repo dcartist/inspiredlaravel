@@ -4,6 +4,75 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.frameworks i>p{
+    font-family: 'Helvetica';
+}
+.aboutSection>p{
+    margin-bottom: 15px;
+}
+.aboutMe i>span{
+    font-family: 'Helvetica';
+    font-weight: 400;
+
+}
+.listing li{
+    margin-bottom: 10px;
+}
+
+.inspireSection div{
+height: 150px;
+margin: 10px;
+background-color: #3b8eb842;
+display:block;
+width: 180px;
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 5px;
+}
+.inspireSection a, .inspireSection a:hover{
+    text-decoration: none;
+}
+
+/* .tooltip{ */
+    /* position: relative; */
+    /* display: inline-block; */
+    /* color: black;
+    visibility: visible;
+} */
+
+/* .tooltext{
+    z-index: 15;
+    position: absolute;
+} */
+
+/* .tooltext{
+    visibility: hidden;
+    z-index: 15;
+    position: absolute;
+
+} */
+
+
+.tooltips {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltips .tooltext {
+    visibility: hidden;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 15;
+    top: 20px;
+    left: -20px;
+  }
+
+  .tooltips:hover .tooltext {
+    visibility: visible;
+  }
 
 
 html, body {
@@ -84,5 +153,5 @@ li.nav-item>a.nav-link {
 
 .page-item.active .page-link{
 color:white;
-background-color:black !important;    
+background-color:black !important;
 }

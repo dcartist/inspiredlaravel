@@ -5,6 +5,7 @@
 
 <h1 class="bg-black min-w-full self-end h-11 text-3xl pl-5 text-white">Support Groups</h1>
 </div>
+<div class="pt-1"><x-alert/></div>
 <section class="p-10 flex justify-center flex-center flex-column">
 
 @if ($groups->count())
