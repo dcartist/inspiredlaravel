@@ -71,7 +71,10 @@ padding: 5px;
   .tooltips:hover .tooltext {
     visibility: visible !important;
   }
-
+  .inspireList li{
+      margin-bottom: 5px;
+      margin-left: 15px;
+  }
 
 html, body {
     background-color: #fff;
