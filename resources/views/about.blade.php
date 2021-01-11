@@ -29,8 +29,8 @@
 <h3 class="text-xl font-bold mb-1">Workable Features:</h3>
 <ul class="listing">
     <li class="list-disc list-inside pl-10">Directory</li>
-    <li class="list-disc list-inside pl-10">Inspire section (Imposter Syndrome, Mantras)</li>
-    <li class="list-disc list-inside pl-10">Login/Register (due to being a prototype only login is available)</li>
+    <li class="list-disc list-inside pl-10">Inspire section (Imposter Syndrome)</li>
+    <li class="list-disc list-inside pl-10">Login/Register (due to being a prototype functionality is disabled)</li>
     <li class="list-disc list-inside pl-10">Profile Creation</li>
 </ul>
 <h3 class="text-xl font-bold  mb-1">Future Plans:</h3>
@@ -38,8 +38,11 @@
 <ul class="listing">
     <li class="list-disc list-inside pl-10">Functional groups: Groups where people can have events/meetups and discussions</li>
     <li class="list-disc list-inside pl-10">Dynamic Directory: About to search by category</li>
+    <li class="list-disc list-inside pl-10">Tech Mantras and Pep Talks</li>
     <li class="list-disc list-inside pl-10">Video Section: More inspirational videos based on category</li>
     <li class="list-disc list-inside pl-10">Email Notifications</li>
+    <li class="list-disc list-inside pl-10">Adding photos, avatars and emojis</li>
+    <li class="list-disc list-inside pl-10">Ability for users to add to the directory and rate individual links</li>
     <li class="list-disc list-inside pl-10">Search Functionality</li>
 </ul>
 </section>
