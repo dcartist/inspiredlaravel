@@ -1,8 +1,7 @@
 # INSPIRED TECH LIFE #
 
 
-
-##About
+## About
 
 Dreamed up during the Digital Ocean hackathon, Inspired Tech life is a community for developers, designers, data scientists, and beyond. ITF's purpose is to help those in the tech world find help and support through groups, videos, mantras, and find support resources.
 
