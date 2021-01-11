@@ -1,7 +1,5 @@
 # Getting Started #
 
-These steps will get this sample application running for you using DigitalOcean.
-
 **Note: Following these steps will result in charges for the use of DigitalOcean services**
 
 ## Requirements
@@ -37,35 +35,4 @@ base64:UdAH2B63rlotjrkSSsj3Hppy4gbfr+OeHvtSdF9r9q8=
 
 Copy the `base64:...` output to your clipboard. This is your application key. When deploying your application to App Platform, configure the `APP_KEY` environment variable to use the key you generated.
 
-### Nginx
-
-By default, Apache will be used as the webserver. If you would like to use Nginx instead, create a file named `nginx.conf` at the root of the repo with:
-
-```nginx
-location / {
-    try_files $uri @php;
-}
-
-location @php {
-    rewrite ^(.*)$ /index.php$1 last;
-}
-```
-
-and set your app's run command to: `heroku-php-nginx -C nginx.conf public/`
-
-## Learn More ##
-
-You can learn more about the App Platform and how to manage and update your application at https://www.digitalocean.com/docs/app-platform.
-
-
-## Deleting the App #
-
-When you no longer need this sample application running live, you can delete it by following these steps:
-1. Visit the Apps control panel at https://cloud.digitalocean.com/apps
-1. Navigate to the sample-laravel app
-1. Choose "Settings"->"Destroy"
-
-This will delete the app and destroy any underlying DigitalOcean resources
-
-**Note: If you don't delete your app, charges for the use of DigitalOcean services will continue to accrue.**
 

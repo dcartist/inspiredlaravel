@@ -4,7 +4,11 @@
 
 <div class="flex justify-center flex-col">
 <div class="pl-10 pr-10 pt-5"><x-alert/>
-<p>This section is in the development stage. The login section will allow users to interact in the groups' section, save listings, and message other users.</p></div>
+<p>This section is in the development stage. The login section will allow users to interact in the groups' section, save listings, and message other users.</p>
+
+<p class="text-sm mt-4">*Due to being a prototype the login/registration sections are disabled right now.</p>
+
+</div>
 <div class="flex justify-center">
     <div class="bg-gray-100 p-5 w-1/2 shadow-lg mt-3">
         <form method="POST" action="{{route('login')}}">
