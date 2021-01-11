@@ -7,8 +7,12 @@ Dreamed up during the Digital Ocean hackathon, Inspired Tech life is a community
 - PHP
 - Laravel 8 
 - Tailwind CSS
+- FontAwesome
 - PSQL
 - Node JS
+
+@ icon-info-circle
+
 
 ## Deployment
 
