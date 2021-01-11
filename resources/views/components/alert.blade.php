@@ -7,4 +7,3 @@
 <div class="col-span-4 text-sm -ml-6 tooltips">Status: Prototype<span class="tooltext bg-blue-900 text-white shadow-2xl">Due to time limit there are sections that still are under construction.</span></div>
 </div>
 
-</div>
