@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inpired Tech Life</title>
+    <title>Inspired Tech Life</title>
+    <meta property="twitter:url" content="https://www.inspiredtech.life">
+    <meta property="twitter:title" content="Inspired Tech Life">
+    <meta property="twitter:description" content="Inspired Tech life is to help those in the tech world find help and support through groups, videos, mantras, and find support resources.">
+
+
+    <meta name="Description" content="Inspired Tech life is to help those in the tech world find help and support through groups, videos, mantras, and find support resources.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.inspiredtech.life">
+    <meta property="og:title" content="Inspired Tech Life">
+    <meta property="og:description" content="Inspired Tech life is to help those in the tech world find help and support through groups, videos, mantras, and find support resources.">
+
 
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">

@@ -1,7 +1,7 @@
 
 <div class="p-10">
 <h1 class="text-6xl">Imposter Syndrome</h1>
-<p class="text-sm mb-3">Definition (via wikipedia):</p>
+<p class="text-sm mt-5 mb-3">Definition (via wikipedia):</p>
 <section class="mb-3">
 
 <p>
@@ -14,9 +14,9 @@ Impostor syndrome (also known as impostor phenomenon, impostorism, fraud syndrom
     <h2 class="text-4xl">Links</h2>
     <div class="p-3">
         <ul class="list-disc">
-            <li><a href="https://medium.com/yext-design/embracing-imposter-syndrome-as-a-designer-f47b582bc3a7" target="_blank">Embracing Imposter Syndrome as a Designer</a></li>
-            <li><a href="https://www.themuse.com/advice/5-different-types-of-imposter-syndrome-and-5-ways-to-battle-each-one" target="_blank">5 Different Types of Imposter Syndrome (and 5 Ways to Battle Each One)</a></li>
-            <li><a href="https://impostorsyndrome.com/10-steps-overcome-impostor/" target="_blank">10 STEPS YOU CAN USE TO OVERCOME IMPOSTOR SYNDROME</a></li>
+            <li><a href="https://medium.com/yext-design/embracing-imposter-syndrome-as-a-designer-f47b582bc3a7" target="_blank">Embracing Imposter Syndrome as a Designer <i class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="https://www.themuse.com/advice/5-different-types-of-imposter-syndrome-and-5-ways-to-battle-each-one" target="_blank">5 Different Types of Imposter Syndrome (and 5 Ways to Battle Each One) <i class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="https://impostorsyndrome.com/10-steps-overcome-impostor/" target="_blank">10 STEPS YOU CAN USE TO OVERCOME IMPOSTOR SYNDROME <i class="fas fa-external-link-alt"></i></a></li>
             <!-- <li><a href="" target="_blank"></a></li> -->
         </ul>
     </div>
