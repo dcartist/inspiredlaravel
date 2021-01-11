@@ -1,11 +1,10 @@
 @extends('base')
 
 @section('content')
-<div class="flex justify-center content-end" id="aboutBackgroundHeader" style="background-image: url({{asset('/images/hands.jpg')}});" >
+<div class="flex justify-center content-end" id="aboutBackgroundHeader" style="background-image: url({{asset('/images/poly.svg')}});" >
 
 <h1 class="bg-black min-w-full self-end h-11 text-3xl pl-5 text-white">About Inspired Tech Life</h1>
 </div>
-
 <section class="flex justify-center">
 <div class="w-5/6">
 

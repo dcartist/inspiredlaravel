@@ -1,8 +1,8 @@
 
 <div class="p-10">
 <h1 class="text-6xl">Imposter Syndrome</h1>
-<section class="p-10">
-    <p class="text-sm">Definition (via wikipedia):</p>
+<p class="text-sm mb-3">Definition (via wikipedia):</p>
+<section class="mb-3">
 
 <p>
 Impostor syndrome (also known as impostor phenomenon, impostorism, fraud syndrome or the impostor experience) is a psychological pattern in which an individual doubts their skills, talents or accomplishments and has a persistent internalized fear of being exposed as a "fraud".
@@ -10,9 +10,9 @@ Impostor syndrome (also known as impostor phenomenon, impostorism, fraud syndrom
 
 </section>
 
-<section class="mb-5">
+<section class="mb-2">
     <h2 class="text-4xl">Links</h2>
-    <div class="p-10">
+    <div class="p-3">
         <ul class="list-disc">
             <li><a href="https://medium.com/yext-design/embracing-imposter-syndrome-as-a-designer-f47b582bc3a7" target="_blank">Embracing Imposter Syndrome as a Designer</a></li>
             <li><a href="https://www.themuse.com/advice/5-different-types-of-imposter-syndrome-and-5-ways-to-battle-each-one" target="_blank">5 Different Types of Imposter Syndrome (and 5 Ways to Battle Each One)</a></li>

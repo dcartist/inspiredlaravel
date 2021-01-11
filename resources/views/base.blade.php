@@ -14,12 +14,12 @@
 </head>
 <body>
 <x-navigation/>
-<div>
+<div class="min-h-full">
 @yield('content')
 
 
-<div class="text-center text-sm">&copy; Paula Bannerman 2021</div>
 </div>
+<div class="text-center text-sm">&copy; Paula Bannerman 2021</div>
 <script src="https://kit.fontawesome.com/0d31a2da49.js" crossorigin="anonymous"></script>
 <script src="{{ asset('js/script.js')}}"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
