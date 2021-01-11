@@ -1,13 +1,39 @@
-# Getting Started #
+# INSPIRED TECH LIFE #
 
-These steps will get this sample application running for you using DigitalOcean.
+##About
+Dreamed up during the Digital Ocean hackathon, Inspired Tech life is a community for developers, designers, data scientists, and beyond. ITF's purpose is to help those in the tech world find help and support through groups, videos, mantras, and find support resources.
 
-**Note: Following these steps will result in charges for the use of DigitalOcean services**
+## Why Inspired Tech Life
+While working as an instructional associate General Assembly, I found myself helping to inspire other students (designers, developers, and data scientists) that went beyond just the technical aspect. I feel there is a need for inspirational creative, and encouragement during life, especially when imposter syndrome, depression, doubt, and lack of focus can run amuck in this climate. 
 
-## Requirements
+*--Paula Bannerman*
+
+
+## Language & Framework
+
+- PHP
+
+- Laravel 8 
+
+- Tailwind CSS
+
+- FontAwesome
+
+- PSQL
+
+- Node JS
+
+  
+
+## Deployment
+
+Digital Ocean Platform
+
+
+## Requirements For Deployment on Digital Ocean
 
 * You need a DigitalOcean account. If you don't already have one, you can sign up at https://cloud.digitalocean.com/registrations/new
-    
+  
 ## Forking the Sample App Source Code
 
 To use all the features of App Platform, you need to be running against your own copy of this application. To make a copy, click the Fork button above and follow the on-screen instructions. In this case, you'll be forking this repo as a starting point for your own app (see [Github documentation](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) to learn more about forking repos.
@@ -20,7 +46,7 @@ After forking the repo, you should now be viewing this README in your own github
 
 Click this button to deploy the app to the DigitalOcean App Platform.
 
- [![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/digitalocean/sample-laravel/tree/main)
+ [![Deploy to DO](https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/dcartist/inspiredlaravel/tree/master)
 
 ## Making Changes to Your App ##
 
@@ -36,36 +62,3 @@ base64:UdAH2B63rlotjrkSSsj3Hppy4gbfr+OeHvtSdF9r9q8=
 ```
 
 Copy the `base64:...` output to your clipboard. This is your application key. When deploying your application to App Platform, configure the `APP_KEY` environment variable to use the key you generated.
-
-### Nginx
-
-By default, Apache will be used as the webserver. If you would like to use Nginx instead, create a file named `nginx.conf` at the root of the repo with:
-
-```nginx
-location / {
-    try_files $uri @php;
-}
-
-location @php {
-    rewrite ^(.*)$ /index.php$1 last;
-}
-```
-
-and set your app's run command to: `heroku-php-nginx -C nginx.conf public/`
-
-## Learn More ##
-
-You can learn more about the App Platform and how to manage and update your application at https://www.digitalocean.com/docs/app-platform.
-
-
-## Deleting the App #
-
-When you no longer need this sample application running live, you can delete it by following these steps:
-1. Visit the Apps control panel at https://cloud.digitalocean.com/apps
-1. Navigate to the sample-laravel app
-1. Choose "Settings"->"Destroy"
-
-This will delete the app and destroy any underlying DigitalOcean resources
-
-**Note: If you don't delete your app, charges for the use of DigitalOcean services will continue to accrue.**
-

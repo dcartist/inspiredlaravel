@@ -1,10 +1,85 @@
 #aboutBackgroundHeader {
-    height: 200px;
+    height: 150px;
     background-position: center -190px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Box Shadow From CSS Tricks */
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+.frameworks i>p{
+    font-family: 'Helvetica';
+}
+.aboutSection>p{
+    margin-bottom: 15px;
+}
+.aboutMe i>span{
+    font-family: 'Helvetica';
+    font-weight: 400;
+
+}
+.listing li{
+    margin-bottom: 10px;
 }
 
+.inspireSection div{
+height: 150px;
+margin: 10px;
+background-color: #3b8eb842;
+display:block;
+width: 180px;
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 5px;
+}
+.inspireSection a, .inspireSection a:hover{
+    text-decoration: none;
+}
+
+/* .tooltip{ */
+    /* position: relative; */
+    /* display: inline-block; */
+    /* color: black;
+    visibility: visible;
+} */
+
+/* .tooltext{
+    z-index: 15;
+    position: absolute;
+} */
+
+/* .tooltext{
+    visibility: hidden;
+    z-index: 15;
+    position: absolute;
+
+} */
+.tooltips {
+    position: relative !important;
+    display: inline-block !important;
+  }
+
+  .tooltips .tooltext {
+    visibility: hidden !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+    padding: 10px !important;
+    position: absolute !important;
+    z-index: 15 !important;
+    top: 20px !important;
+    left: -20px !important;
+  }
+
+  .tooltips:hover .tooltext {
+    visibility: visible !important;
+  }
+  .inspireList li{
+      margin-bottom: 5px;
+      margin-left: 15px;
+  }
 
 html, body {
     background-color: #fff;
@@ -84,5 +159,5 @@ li.nav-item>a.nav-link {
 
 .page-item.active .page-link{
 color:white;
-background-color:black !important;    
+background-color:black !important;
 }
