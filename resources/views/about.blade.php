@@ -15,6 +15,8 @@
     <p>Due to time limit there are sections that still are under construction.</p>
     <h3 class="text-3xl font-bold mb-1">About</h3>
     <p>Dreamed up during the Digital Ocean hackathon, Inspired Tech life is a community for developers, designers, data scientists, and beyond. ITF's purpose is to help those in the tech world find help and support through groups, videos, mantras, and find support resources.</p>
+    <h3 class="text-3xl font-bold mb-1">Why Inspired Tech Life</h3>
+    <p>While working as an instructional associate General Assembly, I found myself helping to inspire other students (designers, developers, and data scientists) that went beyond just the technical aspect. I feel there is a need for inspirational creative, and encouragement during life, especially when imposter syndrome, depression, doubt, and lack of focus can run amuck in this climate.<span> -Paula Bannerman</span></p>
 
     <p>ITF is developed with Laravel 8, PHP, and Postgres SQL on the Digital Ocean Platform.</p>
     <div class="flex w-full justify-around frameworks mt-10">
